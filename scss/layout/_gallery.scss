@@ -1,16 +1,15 @@
 /* Accessories Section with Image Gallery
 ===================*/
 
-#accessories{
+#accessories {
   margin-top: $fiftypx;
   margin-bottom: 0;
   padding-top: $fiftypx/2;
   padding-bottom: $fiftypx;
-  background-color: rgba(0, 0,0, 0.1);
-}
-
-#accessories h1 {
-  @extend %centerText;
+  background-color: rgba($black, 0.1);
+  h1, h3 {
+    @extend %centerText;
+  }
 }
 
 #gallery {
@@ -52,7 +51,7 @@
     @extend %hoverBefore;
   }
   &:hover:after {
-    @include galleryText("2oz Samples Bottles & Roller Top", 170px, 30px);
+    @include galleryText("2oz Samples Bottles & Roller Top", 170px, 5px);
     @extend %hoverAfter;
   }
 }
@@ -88,7 +87,7 @@
     @extend %hoverBefore;
   }
   &:hover:after {
-    @include galleryText("Samples of Ningxia Red", 170px, 50px);
+    @include galleryText("Samples of Ningxia Red", 170px, 30px);
     @extend %hoverAfter;
   }
 }
@@ -106,7 +105,7 @@
     @extend %hoverBefore;
   }
   &:hover:after {
-    @include galleryText("Literature to Help You Learn About Oils", 170px, 50px);
+    @include galleryText("Literature to Help You Learn About Oils", 170px, 10px);
     @extend %hoverAfter;
   }
 }
@@ -125,7 +124,7 @@
     @extend %hoverBefore;
   }
   &:hover:after {
-    @include galleryText("Join a Community of Fellow Oilers", 170px, 40px);
+    @include galleryText("Join a Community of Fellow Oilers", 170px, 10px);
     @extend %hoverAfter;
   }
 }

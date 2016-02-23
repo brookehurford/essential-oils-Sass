@@ -47,7 +47,7 @@ hr {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
 
-#summary a, #table h1, #table h3, #table p, #accessories h1, #footer {
+#summary a, #table h1, #table h3, #table p, #accessories h1, #accessories h3, #footer {
   text-align: center; }
 
 .summaryCenter, #youngLivingOils {
@@ -94,7 +94,7 @@ hr {
 
 #header {
   background-image: url("../img/bamboo-top.png");
-  height: 800px;
+  height: 70vh;
   width: 100%;
   background-size: cover; }
 
@@ -120,6 +120,7 @@ hr {
 
 #summary {
   background-image: url("../img/oils.jpg");
+  background-repeat: no-repeat;
   width: 100%;
   height: 600px;
   overflow: auto; }
@@ -269,7 +270,7 @@ th:hover::after {
   .bottles:hover:after {
     content: "2oz Samples Bottles & Roller Top";
     top: 170px;
-    left: 30px; }
+    left: 5px; }
 
 /* ---- Sample Packets ----*/
 .packets {
@@ -285,7 +286,7 @@ th:hover::after {
   .red:hover:after {
     content: "Samples of Ningxia Red";
     top: 170px;
-    left: 50px; }
+    left: 30px; }
 
 /* ---- Magazines ----*/
 .magazines {
@@ -293,7 +294,7 @@ th:hover::after {
   .magazines:hover:after {
     content: "Literature to Help You Learn About Oils";
     top: 170px;
-    left: 50px; }
+    left: 10px; }
 
 /* ---- Happy Oiler ----*/
 .happyoiler {
@@ -301,7 +302,7 @@ th:hover::after {
   .happyoiler:hover:after {
     content: "Join a Community of Fellow Oilers";
     top: 170px;
-    left: 40px; }
+    left: 10px; }
 
 /* Footer
 ===================*/

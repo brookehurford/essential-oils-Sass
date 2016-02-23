@@ -1,5 +1,6 @@
 #summary {
-  background-image: url("../img/oils.jpg");
+  background-image: url("#{$img-path}/oils.jpg");
+  background-repeat: no-repeat;
   width: $full-width;
   height: 600px;
   overflow: auto;
