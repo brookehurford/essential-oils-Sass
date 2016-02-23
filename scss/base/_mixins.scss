@@ -1,0 +1,9 @@
+@mixin galleryImageMX($imgFile) {
+  background-image: url("../img/#{$imgFile}");
+}
+
+@mixin galleryText($caption, $top, $left) {
+  content: "#{$caption}";
+  top: $top;
+  left: $left;
+}

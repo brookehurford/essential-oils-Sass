@@ -42,6 +42,47 @@ hr {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
+#accessories h1, #footer {
+  text-align: center; }
+
+.dewdrop, .bottles, .packets, .red, .magazines, .happyoiler {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px; }
+
+.dewdrop, .bottles, .packets, .red, .magazines, .happyoiler {
+  position: relative;
+  width: 400px;
+  height: 400px; }
+
+.dewdrop:before, .bottles:before, .packets:before, .red:before, .magazines:before, .happyoiler:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.dewdrop:hover:before, .bottles:hover:before, .packets:hover:before, .red:hover:before, .magazines:hover:before, .happyoiler:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.dewdrop:hover:after, .bottles:hover:after, .packets:hover:after, .red:hover:after, .magazines:hover:after, .happyoiler:hover:after {
+  color: white;
+  position: absolute;
+  font-size: 2em;
+  text-align: center; }
+
 #header {
   background-image: url("../img/bamboo-top.png");
   height: 800px;
@@ -215,9 +256,6 @@ th:hover::after {
   padding-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.1); }
 
-#accessories h1 {
-  text-align: center; }
-
 #gallery {
   margin: 0 auto;
   overflow: auto;
@@ -225,284 +263,65 @@ th:hover::after {
 
 /* Image Gallery with Hovers
 ===================*/
-/* ---- Dewdrop ----*/
 .dewdrop {
-  overflow: auto;
-  float: left;
-  width: 33%;
-  height: 400px;
-  width: 400px;
-  border: 2px solid lightgrey;
-  box-shadow: 2px 3px 2px #E0E0E0;
-  margin: 20px; }
-
-.dewdrop {
-  position: relative;
-  background-image: url("../img/dewdrop.jpg");
-  width: 400px;
-  height: 400px; }
-
-.dewdrop:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 1s;
-  -webkit-transition: all 1s; }
-
-.dewdrop:hover:before {
-  color: white;
-  opacity: 1;
-  text-align: center;
-  vertical-align: middle; }
-
-.dewdrop:hover:after {
-  content: "The Dewdrop Diffuser";
-  color: white;
-  position: absolute;
-  top: 170px;
-  left: 50px;
-  font-size: 2em;
-  text-align: center; }
+  background-image: url("../img/dewdrop.jpg"); }
+  .dewdrop:hover:after {
+    content: "The Dewdrop Diffuser";
+    top: 170px;
+    left: 50px; }
 
 /* ---- Small Bottles ----*/
 .bottles {
-  overflow: auto;
-  float: left;
-  width: 33%;
-  height: 400px;
-  width: 400px;
-  border: 2px solid lightgrey;
-  box-shadow: 2px 3px 2px #E0E0E0;
-  margin: 20px; }
-
-.bottles {
-  position: relative;
-  background-image: url("../img/small-bottles.jpg");
-  width: 400px;
-  height: 400px; }
-
-.bottles:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 1s;
-  -webkit-transition: all 1s; }
-
-.bottles:hover:before {
-  color: white;
-  opacity: 1;
-  text-align: center;
-  vertical-align: middle; }
-
-.bottles:hover:after {
-  width: 80%;
-  content: "2oz Samples Bottles & Roller Top";
-  color: white;
-  position: absolute;
-  top: 170px;
-  left: 50px;
-  font-size: 2em;
-  text-align: center; }
+  background-image: url("../img/small-bottles.jpg"); }
+  .bottles:hover:after {
+    content: "2oz Samples Bottles & Roller Top";
+    top: 170px;
+    left: 30px; }
 
 /* ---- Sample Packets ----*/
 .packets {
-  overflow: auto;
-  float: left;
-  width: 33%;
-  height: 400px;
-  width: 400px;
-  border: 2px solid lightgrey;
-  box-shadow: 2px 3px 2px #E0E0E0;
-  margin: 20px; }
-
-.packets {
-  position: relative;
-  background-image: url("../img/sample-packets.jpg");
-  width: 400px;
-  height: 400px; }
-
-.packets:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 1s;
-  -webkit-transition: all 1s; }
-
-.packets:hover:before {
-  color: white;
-  opacity: 1;
-  text-align: center;
-  vertical-align: middle; }
-
-.packets:hover:after {
-  width: 80%;
-  content: "4oz Sample Packets";
-  color: white;
-  position: absolute;
-  top: 170px;
-  left: 50px;
-  font-size: 2em;
-  text-align: center; }
+  background-image: url("../img/sample-packets.jpg"); }
+  .packets:hover:after {
+    content: "4oz Sample Packets";
+    top: 170px;
+    left: 50px; }
 
 /* ---- Ningxia Red Packets ----*/
 .red {
-  overflow: auto;
-  float: left;
-  width: 33%;
-  height: 400px;
-  width: 400px;
-  border: 2px solid lightgrey;
-  box-shadow: 2px 3px 2px #E0E0E0;
-  margin: 20px; }
-
-.red {
-  position: relative;
-  background-image: url("../img/red.jpg");
-  width: 400px;
-  height: 400px; }
-
-.red:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 1s;
-  -webkit-transition: all 1s; }
-
-.red:hover:before {
-  color: white;
-  opacity: 1;
-  text-align: center;
-  vertical-align: middle; }
-
-.red:hover:after {
-  width: 80%;
-  content: "Samples of Ningxia Red";
-  color: white;
-  position: absolute;
-  top: 170px;
-  left: 40px;
-  font-size: 2em;
-  text-align: center; }
+  background-image: url("../img/red.jpg"); }
+  .red:hover:after {
+    content: "Samples of Ningxia Red";
+    top: 170px;
+    left: 50px; }
 
 /* ---- Magazines ----*/
 .magazines {
-  overflow: auto;
-  float: left;
-  width: 33%;
-  height: 400px;
-  width: 400px;
-  border: 2px solid lightgrey;
-  box-shadow: 2px 3px 2px #E0E0E0;
-  margin: 20px; }
-
-.magazines {
-  position: relative;
-  background-image: url("../img/magazines.jpg");
-  width: 400px;
-  height: 400px; }
-
-.magazines:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 1s;
-  -webkit-transition: all 1s; }
-
-.magazines:hover:before {
-  color: white;
-  opacity: 1;
-  text-align: center;
-  vertical-align: middle; }
-
-.magazines:hover:after {
-  width: 80%;
-  content: "Literature to Help You Learn About Oils";
-  color: white;
-  position: absolute;
-  top: 170px;
-  left: 40px;
-  font-size: 2em;
-  text-align: center; }
+  background-image: url("../img/magazines.jpg"); }
+  .magazines:hover:after {
+    content: "Literature to Help You Learn About Oils";
+    top: 170px;
+    left: 50px; }
 
 /* ---- Happy Oiler ----*/
 .happyoiler {
-  overflow: auto;
-  float: left;
-  width: 33%;
-  height: 400px;
-  width: 400px;
-  border: 2px solid lightgrey;
-  box-shadow: 2px 3px 2px #E0E0E0;
-  margin: 20px; }
-
-.happyoiler {
-  position: relative;
-  background-image: url("../img/happyoiler.jpg");
-  width: 400px;
-  height: 400px; }
-
-.happyoiler:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 1s;
-  -webkit-transition: all 1s; }
-
-.happyoiler:hover:before {
-  color: white;
-  opacity: 1;
-  text-align: center;
-  vertical-align: middle; }
-
-.happyoiler:hover:after {
-  width: 80%;
-  content: "Join a Community of Fellow Oilers";
-  color: white;
-  position: absolute;
-  top: 170px;
-  left: 40px;
-  font-size: 2em;
-  text-align: center; }
+  background-image: url("../img/happyoiler.jpg"); }
+  .happyoiler:hover:after {
+    content: "Join a Community of Fellow Oilers";
+    top: 170px;
+    left: 40px; }
 
 /* Footer
 ===================*/
 #footer {
-  padding-bottom: 30px;
-  text-align: center; }
-
-#footer p {
-  padding-top: 60px;
-  padding-bottom: 20px; }
+  padding-bottom: 30px; }
+  #footer p {
+    padding-top: 60px;
+    padding-bottom: 20px; }
+  #footer img {
+    position: relative;
+    left: 250px;
+    bottom: 75px;
+    transform: rotate(15deg); }
 
 #footer a {
   text-decoration: none;
@@ -510,17 +329,10 @@ th:hover::after {
   background-color: #794A86;
   color: white;
   padding: 10px 20px 10px 20px; }
-
-#footer a:hover {
-  border: 2px solid #794A86;
-  background-color: white;
-  color: #794A86;
-  padding: 10px 20px 10px 20px; }
-
-#footer img {
-  position: relative;
-  left: 250px;
-  bottom: 75px;
-  transform: rotate(15deg); }
+  #footer a:hover {
+    border: 2px solid #794A86;
+    background-color: white;
+    color: #794A86;
+    padding: 10px 20px 10px 20px; }
 
 /*# sourceMappingURL=application.css.map */
