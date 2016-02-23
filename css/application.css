@@ -1,0 +1,526 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-family: 'Raleway', sans-serif; }
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600; }
+
+p {
+  letter-spacing: .03em;
+  line-height: 25px;
+  font-size: 18px; }
+
+hr {
+  margin-top: 0; }
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+#header {
+  background-image: url("../img/bamboo-top.png");
+  height: 800px;
+  width: 100%;
+  background-size: cover; }
+
+.tagline {
+  color: white;
+  position: absolute;
+  top: 340px;
+  left: 50px; }
+
+.tagline h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 66px;
+  font-weight: normal;
+  margin-top: 0;
+  text-shadow: 1px 1px 1px white; }
+
+.tagline h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px white;
+  width: 60%;
+  line-height: 45px; }
+
+#summary {
+  background-image: url("../img/oils.jpg");
+  width: 100%;
+  height: 600px;
+  overflow: auto; }
+
+#summary h2 {
+  margin-top: 0;
+  padding-top: 70px; }
+
+.transparent {
+  content: " ";
+  z-index: 10;
+  display: block;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.7); }
+
+.summaryCenter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+#summary a {
+  background-color: #794A86;
+  color: white;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 1.2em;
+  border: 2px solid #794A86;
+  border-radius: 100px;
+  margin-top: 50px;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  text-decoration: none; }
+
+/* Oils section and Table Content
+=================*/
+#youngLivingOils {
+  margin-left: auto;
+  margin-right: auto; }
+
+#table {
+  padding-top: 25px;
+  width: 100%; }
+
+#table h1, h3 {
+  text-align: center; }
+
+#table p {
+  text-align: center;
+  font-size: 12px;
+  text-shadow: 1px 1px 1px white; }
+
+table {
+  border-collapse: collapse;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  overflow: hidden; }
+
+img {
+  max-width: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+tbody tr {
+  border-left: 1px solid #E0E0E0; }
+
+tbody tr td {
+  width: 130px; }
+
+tbody tr th {
+  text-shadow: 0 2px 2px white; }
+
+td, th {
+  padding: 5px;
+  position: relative;
+  outline: 10; }
+
+.redBrown {
+  background-color: #884240;
+  height: 30px;
+  margin: 5px; }
+
+.purple {
+  background-color: #7d5287;
+  height: 30px;
+  margin: 5px; }
+
+.digize {
+  background-color: #bd3944;
+  height: 30px;
+  margin: 5px; }
+
+.purification {
+  background-color: #aa3a65;
+  height: 30px;
+  margin: 5px; }
+
+.lemon {
+  background-color: #EAAB49;
+  height: 30px;
+  margin: 5px; }
+
+.deepPink {
+  background-color: #de3759;
+  height: 30px;
+  margin: 5px; }
+
+.green {
+  background-color: #68a854;
+  height: 30px;
+  margin: 5px; }
+
+.peppermint {
+  background-color: #3C5D57;
+  height: 30px;
+  margin: 5px; }
+
+/* ---- Table Hover Effects ----*/
+td:hover::after, th:hover::after {
+  content: '';
+  height: 10000px;
+  left: 0;
+  position: absolute;
+  top: -5000px;
+  width: 100%;
+  z-index: -1; }
+
+td:hover::after,
+th:hover::after {
+  background-color: #E0E0E0; }
+
+/* Accessories Section with Image Gallery
+===================*/
+#accessories {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+#accessories h1 {
+  text-align: center; }
+
+#gallery {
+  margin: 0 auto;
+  overflow: auto;
+  padding-left: 75px; }
+
+/* Image Gallery with Hovers
+===================*/
+/* ---- Dewdrop ----*/
+.dewdrop {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px; }
+
+.dewdrop {
+  position: relative;
+  background-image: url("../img/dewdrop.jpg");
+  width: 400px;
+  height: 400px; }
+
+.dewdrop:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.dewdrop:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.dewdrop:hover:after {
+  content: "The Dewdrop Diffuser";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-size: 2em;
+  text-align: center; }
+
+/* ---- Small Bottles ----*/
+.bottles {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px; }
+
+.bottles {
+  position: relative;
+  background-image: url("../img/small-bottles.jpg");
+  width: 400px;
+  height: 400px; }
+
+.bottles:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.bottles:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.bottles:hover:after {
+  width: 80%;
+  content: "2oz Samples Bottles & Roller Top";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-size: 2em;
+  text-align: center; }
+
+/* ---- Sample Packets ----*/
+.packets {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px; }
+
+.packets {
+  position: relative;
+  background-image: url("../img/sample-packets.jpg");
+  width: 400px;
+  height: 400px; }
+
+.packets:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.packets:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.packets:hover:after {
+  width: 80%;
+  content: "4oz Sample Packets";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-size: 2em;
+  text-align: center; }
+
+/* ---- Ningxia Red Packets ----*/
+.red {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px; }
+
+.red {
+  position: relative;
+  background-image: url("../img/red.jpg");
+  width: 400px;
+  height: 400px; }
+
+.red:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.red:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.red:hover:after {
+  width: 80%;
+  content: "Samples of Ningxia Red";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-size: 2em;
+  text-align: center; }
+
+/* ---- Magazines ----*/
+.magazines {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px; }
+
+.magazines {
+  position: relative;
+  background-image: url("../img/magazines.jpg");
+  width: 400px;
+  height: 400px; }
+
+.magazines:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.magazines:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.magazines:hover:after {
+  width: 80%;
+  content: "Literature to Help You Learn About Oils";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-size: 2em;
+  text-align: center; }
+
+/* ---- Happy Oiler ----*/
+.happyoiler {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px; }
+
+.happyoiler {
+  position: relative;
+  background-image: url("../img/happyoiler.jpg");
+  width: 400px;
+  height: 400px; }
+
+.happyoiler:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.happyoiler:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle; }
+
+.happyoiler:hover:after {
+  width: 80%;
+  content: "Join a Community of Fellow Oilers";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-size: 2em;
+  text-align: center; }
+
+/* Footer
+===================*/
+#footer {
+  padding-bottom: 30px;
+  text-align: center; }
+
+#footer p {
+  padding-top: 60px;
+  padding-bottom: 20px; }
+
+#footer a {
+  text-decoration: none;
+  border: 2px solid #794A86;
+  background-color: #794A86;
+  color: white;
+  padding: 10px 20px 10px 20px; }
+
+#footer a:hover {
+  border: 2px solid #794A86;
+  background-color: white;
+  color: #794A86;
+  padding: 10px 20px 10px 20px; }
+
+#footer img {
+  position: relative;
+  left: 250px;
+  bottom: 75px;
+  transform: rotate(15deg); }
+
+/*# sourceMappingURL=application.css.map */

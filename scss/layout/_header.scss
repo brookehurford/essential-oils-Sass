@@ -1,0 +1,31 @@
+#header {
+  background-image: url("../img/bamboo-top.png");
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+}
+
+.tagline {
+  color: white;
+  position:absolute;
+  top: 340px;
+  left: 50px;
+}
+
+.tagline h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 66px;
+  font-weight: normal;
+  margin-top: 0;
+  text-shadow: 1px 1px 1px white;
+}
+
+.tagline h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px white;
+  width: 60%;
+  line-height: 45px;
+}
