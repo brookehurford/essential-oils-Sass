@@ -42,8 +42,12 @@ hr {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-#accessories h1, #footer {
+#summary a, #table h1, #table h3, #table p, #accessories h1, #footer {
   text-align: center; }
+
+.summaryCenter, #youngLivingOils {
+  margin-left: auto;
+  margin-right: auto; }
 
 .dewdrop, .bottles, .packets, .red, .magazines, .happyoiler {
   overflow: auto;
@@ -90,36 +94,45 @@ hr {
   background-size: cover; }
 
 .tagline {
-  color: white;
+  color: #fff;
   position: absolute;
   top: 340px;
   left: 50px; }
-
-.tagline h1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 66px;
-  font-weight: normal;
-  margin-top: 0;
-  text-shadow: 1px 1px 1px white; }
-
-.tagline h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  font-size: 30px;
-  text-shadow: 1px 1px 1px white;
-  width: 60%;
-  line-height: 45px; }
+  .tagline h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 66px;
+    font-weight: normal;
+    margin-top: 0;
+    text-shadow: 1px 1px 1px white; }
+  .tagline h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px white;
+    width: 60%;
+    line-height: 45px; }
 
 #summary {
   background-image: url("../img/oils.jpg");
   width: 100%;
   height: 600px;
   overflow: auto; }
-
-#summary h2 {
-  margin-top: 0;
-  padding-top: 70px; }
+  #summary h2 {
+    margin-top: 0;
+    padding-top: 70px; }
+  #summary a {
+    background-color: #794A86;
+    color: #fff;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.2em;
+    border: 2px solid #794A86;
+    border-radius: 100px;
+    margin-top: 50px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none; }
 
 .transparent {
   content: " ";
@@ -129,41 +142,16 @@ hr {
   background: rgba(255, 255, 255, 0.7); }
 
 .summaryCenter {
-  margin-left: auto;
-  margin-right: auto;
   width: 50%; }
-
-#summary a {
-  background-color: #794A86;
-  color: white;
-  display: block;
-  margin-left: 30%;
-  margin-right: 30%;
-  font-size: 1.2em;
-  border: 2px solid #794A86;
-  border-radius: 100px;
-  margin-top: 50px;
-  padding: 10px 15px 10px 15px;
-  text-align: center;
-  text-decoration: none; }
 
 /* Oils section and Table Content
 =================*/
-#youngLivingOils {
-  margin-left: auto;
-  margin-right: auto; }
-
 #table {
-  padding-top: 25px;
+  padding-top: 50px;
   width: 100%; }
-
-#table h1, h3 {
-  text-align: center; }
-
-#table p {
-  text-align: center;
-  font-size: 12px;
-  text-shadow: 1px 1px 1px white; }
+  #table p {
+    font-size: 12px;
+    text-shadow: 1px 1px 1px white; }
 
 table {
   border-collapse: collapse;

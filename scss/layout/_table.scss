@@ -2,23 +2,20 @@
 =================*/
 
 #youngLivingOils {
-  margin-left: auto;
-  margin-right: auto;
+  @extend %margin-auto-LR;
 }
 
 #table {
-  padding-top: 25px;
-  width: 100%;
-}
-
-#table h1, h3 {
-  text-align: center;
-}
-
-#table p {
-  text-align: center;
-  font-size: 12px;
-  text-shadow: 1px 1px 1px white;
+  padding-top: $fiftypx;
+  width: $full-width;
+  h1, h3 {
+    @extend %centerText;
+  }
+  p {
+    @extend %centerText;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px white;
+  }
 }
 
 table {
@@ -56,45 +53,29 @@ td, th {
 }
 
 .redBrown {
-  background-color: #884240;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#884240);
 }
 
 .purple {
-  background-color: #7d5287;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#7d5287);
 }
 .digize {
-  background-color: #bd3944;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#bd3944);
 }
 .purification {
-  background-color: #aa3a65;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#aa3a65);
 }
 .lemon {
-  background-color: #EAAB49;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#EAAB49);
 }
 .deepPink {
-  background-color: #de3759;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#de3759);
 }
 .green {
-  background-color: #68a854;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#68a854);
 }
 .peppermint {
-  background-color: #3C5D57;
-  height: 30px;
-  margin: 5px;
+  @include tableColor(#3C5D57);
 }
 
 /* ---- Table Hover Effects ----*/
@@ -105,7 +86,7 @@ td:hover::after, th:hover::after {
   left: 0;
   position: absolute;
   top: -5000px;
-  width: 100%;
+  width: $full-width;
   z-index: -1;
 }
 

@@ -7,3 +7,9 @@
   top: $top;
   left: $left;
 }
+
+@mixin tableColor($color, $height: 30px, $margin: 5px) {
+  background-color: $color;
+  height: $height;
+  margin: $margin;
+}
