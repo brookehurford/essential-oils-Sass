@@ -52,31 +52,15 @@ td, th {
   outline: 10;
 }
 
-.redBrown {
-  @include tableColor(#884240);
-}
+@include cellColor("peppermint", $peppermint);
+@include cellColor("stressAway", $stressAway);
+@include cellColor("frank", $frank);
+@include cellColor("lemon", $lemon);
+@include cellColor("purification", $purification);
+@include cellColor("digize", $digize);
+@include cellColor("lavender", $lavender);
+@include cellColor("thieves", $thieves);
 
-.purple {
-  @include tableColor(#7d5287);
-}
-.digize {
-  @include tableColor(#bd3944);
-}
-.purification {
-  @include tableColor(#aa3a65);
-}
-.lemon {
-  @include tableColor(#EAAB49);
-}
-.deepPink {
-  @include tableColor(#de3759);
-}
-.green {
-  @include tableColor(#68a854);
-}
-.peppermint {
-  @include tableColor(#3C5D57);
-}
 
 /* ---- Table Hover Effects ----*/
 

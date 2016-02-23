@@ -7,9 +7,29 @@
   top: $top;
   left: $left;
 }
+//
+// @mixin tableColor($color, $height: 30px, $margin: 5px) {
+//   background-color: $color;
+//   height: $height;
+//   margin: $margin;
+// }
 
-@mixin tableColor($color, $height: 30px, $margin: 5px) {
-  background-color: $color;
-  height: $height;
-  margin: $margin;
+// @mixin cellColor($name, $color...) {
+//   @each $color in thieves, lavender, digize, purification, lemon, frank, stressAway, peppermint {
+//     .#{$name} {
+//       background-color: $color;
+//       height: 30px;
+//       margin: 5px;
+//     }
+//   }
+// }
+
+@mixin cellColor($name, $colors...) {
+  @each $color in $colors {
+    .#{$name} {
+      background-color: $color;
+      height: 30px;
+      margin: 5px;
+    }
+  }
 }
